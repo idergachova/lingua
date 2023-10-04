@@ -1,0 +1,85 @@
+/*=============== ACCORDION ===============*/
+.questions__accordion{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+
+    @include tablet {
+        grid-template-columns: 1fr;
+        gap: 10px;
+    }
+}
+
+.accordion{
+
+    &__title{
+        font: var(--Title);
+        color: var(--Text-Primary);
+        transition: var(--transition);
+        @include mobile {
+            font-size: 16px;
+        }
+    }
+
+    &__header{
+        padding: 36px 32px 36px 56px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-direction: row-reverse;
+        cursor: pointer;
+        @include mobile {
+            padding: 24px;
+            gap: 10px;
+        }
+    }
+    &__description{
+        font: var(--Body_text_18);
+        color: var( --text-accordion);
+        padding: 16px 56px 36px 56px;
+        @include mobile {
+            padding: 24px;
+        }
+        
+    }
+    &__icon{
+        background-color: var(--Primary-200);
+        border-radius: 50px;
+        padding: 10px;
+        font-size: 1.5rem;
+        height: max-content;
+        color: var(--Background---White);
+        transition: .3s;
+    }
+
+    &__item{
+        border-radius: 40px;
+        border: 1px solid rgba(176, 176, 192, 0.30);
+        position: relative;
+        transition: var(--transition);
+        margin-bottom: 20px;
+    }
+
+    &__content{
+        overflow: hidden;
+        height: 0;
+        transition: all .25s ease;
+    }
+}
+
+/*Rotate icon and add font weight to titles*/
+.accordion-open{
+    background-color: var(--Primary-200);
+
+    // Add rotation to icon
+    & .accordion__icon{
+        transform: rotate(45deg);
+        background-color: var(--Background---White);
+        color: var(--Primary-200);
+    }
+        
+    // Add font weight to the title of the open accordion
+    & .accordion__title{
+        color: var(--c-text-white);
+    }
+}

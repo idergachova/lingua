@@ -1,0 +1,18 @@
+.btn {
+  display: inline-block;
+  border: 0;
+  outline: 0;
+  cursor: pointer;
+  padding: 12px 32px;
+  border-radius: 73px;
+  font: var(--Button);
+  &._primary {
+    background: var(--Background---White);
+    color: var(--Primary-200);
+  }
+  &._secondary {
+    padding: 17px 32px;
+    color: var(--Background---White);
+    background: var(--Primary-200);
+  }
+}

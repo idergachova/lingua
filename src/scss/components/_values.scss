@@ -1,0 +1,54 @@
+.values {
+  margin-top: 200px;
+  text-align: center;
+  @include mobile {
+   margin-top: 50px;
+  }
+  &__why {
+    font: var(--Subtitle_1);
+    color: var(--Outline-dark);
+    text-transform: uppercase;
+    margin-bottom: 4px;
+  }
+
+  &__title {
+    font: var(--H2);
+    color: var(--Text-Primary);
+    margin-bottom: 88px;
+  }
+}
+.values-list {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 121px;
+  @include tablet {
+    grid-template-columns: 1fr 1fr;
+    gap: 50px;
+  }
+  @include mobile {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+}
+.values-item {
+  &__img {
+    max-width: 81px;
+    max-height: 81px;
+    margin-inline: auto;
+    margin-bottom: 47px;
+  }
+
+  &__title {
+    font: var(--H5);
+    color: var(--Text-Primary);
+    margin-bottom: 16px;
+  }
+
+  &__desc {
+    font-family: "Axiforma-Book";
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 190%;
+    color: var(--Body-text);
+  }
+}

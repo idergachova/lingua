@@ -1,0 +1,23 @@
+html, body {
+	height: 100%;
+}
+body {
+	font-family: var(--ff);
+	padding: 32px;
+	@include mobile {
+		padding: 15px;
+	}
+}
+.container {
+	max-width: 1240px;
+	margin-inline: auto;
+}
+.main {
+	padding: 20px;
+}
+
+h1, h2, h3, p {
+	margin: 0;
+	padding: 0;
+}
+

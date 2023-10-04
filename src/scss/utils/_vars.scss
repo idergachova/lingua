@@ -1,0 +1,69 @@
+// breakpoints
+$desktop-small: 1200px;
+$tablet: 992px;
+$tablet-small: 768px;
+$mobile: 576px;
+$mobile-sm: 390px;
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+
+:root {
+  --ff: "Axiforma", sans-serif;
+  --ff-l: "Axiforma-Light", sans-serif;
+  --ff-book: "Axiforma-Book", sans-serif;
+  --transition: 0.2s all ease-in-out;
+
+  --c-primary: #0b8fed;
+  --c-text-white: #fff;
+  --c-border: #eee;
+
+  --Secondary: #fff5f1;
+  --Body-text: #666680;
+  --Body_text_14: 300 14px/24px var(--ff);
+  --Body_text_18: 300 18px/190% var(--ff-book);
+  --Background---White: #fff;
+  --Background---Dark: #f8fafe;
+  --Button: 700 14px/28px var(--ff);
+  --H1: 300 56px/126% var(--ff);
+  --H2: 300 48px/130% var(--ff-l);
+  --H3: 500 32px/150% var(--ff);
+  --H4: 500 26px/180% var(--ff-book);
+  --H5: 500 24px/150% var(--ff);
+  --Title: 500 20px/180% var(--ff);
+  --Subtitle_1: 700 18px/190% var(--ff);
+  --Subtitle_2: 600 16px/150% var(--ff);
+  --Caption: 300 12px/200% var(--ff);
+  --Button: 700 18px/200% var(--ff);
+  --text-accordion: #CBCAF2;
+
+  --hue-color: 225;
+
+  --first-color: hsl(var(--hue-color), 48%, 35%);
+  --title-color: hsl(var(--hue-color), 48%, 22%);
+  --text-color: hsl(var(--hue-color), 12%, 35%);
+  --body-color: hsl(var(--hue-color), 49%, 98%);
+  --container-color: #FFF;
+
+  /*========== Font and typography ==========*/
+  --body-font: 'Poppins', sans-serif;
+  
+    --normal-font-size: .938rem;
+    --small-font-size: .813rem;
+    --smaller-font-size: .75rem;
+
+
+  --Primary-200: #524fd5;
+  --Text-Primary: #181b32;
+  --Outline-dark: #B0B0C0;
+  --Outline: #E8E8F6;
+
+
+
+  @media screen and (max-width: 992px) {
+    --H1: 300 32px/126% var(--ff);
+    --Body_text_18: 300 14px/190% var(--ff);
+    --normal-font-size: 1rem;
+    --small-font-size: .875rem;
+    --smaller-font-size: .813rem;
+
+  }
+}

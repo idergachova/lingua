@@ -1,0 +1,20 @@
+.questions {
+      margin-top: 200px;
+      @include mobile {
+            margin-top: 100px;
+      }
+
+		&__subtitle {
+            font: var(--Subtitle_1);
+            color: var(--Outline-dark);
+            text-transform: uppercase;
+            margin-bottom: 4px;
+		}
+
+		&__title {
+            font: var(--H2);
+            color: var(--Text-Primary);
+            margin-bottom: 43px;
+		}
+            
+}

@@ -1,0 +1,83 @@
+.students {
+    margin-top: 240px;
+    @include mobile {
+        margin-top: 100px;
+  }
+
+    &__subtitle {
+        font: var(--Subtitle_1);
+        color: var(--Outline-dark);
+        text-transform: uppercase;
+        margin-bottom: 4px;
+    }
+
+    &__title {
+        font: var(--H2);
+        color: var(--Text-Primary);
+        margin-bottom: 59px;
+    }
+
+		&__item {
+            display: flex;
+            align-items: center;
+            gap: 128px;
+
+            @include mobile {
+                gap: 20px;
+                flex-direction: column;
+               }
+
+            
+		}
+}
+
+.item {
+
+    &__img {
+        border-radius: 60px;
+        background: #FCEAE3;
+        img{
+            border-radius: 60px;
+            @include mobile {
+            height: 100%;
+               }
+        }
+
+    }
+
+		&__name {
+        font: var(--H3);
+        color: var(--Text-Primary);
+        margin-bottom: 19px;
+        @include mobile {
+            margin-bottom: 8px;
+            text-align: center;
+           }
+	}
+
+		&__course {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        margin-bottom: 50px;
+        @include mobile {
+            justify-content: center;
+            margin-bottom: 8px;
+           }
+
+            &__flag{
+            max-width: 34px;
+            }
+
+            &__info{
+            font: var(--Body_text_18);
+            color: var(--Body-text);
+            }
+	}
+
+		&__reviews {
+        font: var(--H4);
+        color: var(--Text-Primary);
+        max-width: 610px;
+	}
+}

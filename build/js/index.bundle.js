@@ -1,0 +1,1 @@
+$(".owl-carousel").owlCarousel({items:1,lazyLoad:!0,loop:!0,margin:10}),$(".teachers__owl-carousel").owlCarousel({items:3,lazyLoad:!0,loop:!0,margin:70,responsive:{0:{items:1.3,margin:40},576:{items:2},768:{items:3}}});
